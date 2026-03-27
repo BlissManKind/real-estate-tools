@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<!-- 
+  AUTORIÕIGUS © 2025 [Marko Madismäe]
+  See kood on kaitstud autoriõigusega. 
+  Koodi kopeerimine, muutmine või levitamine ilma loata on keelatud.
+-->
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Küsimustik</title>
+    <link rel="stylesheet" href="./style.css">   
+</head>
+<body>
+    <div class="container">
+       
+        <form id="questionnaire">
+            <header>
+                <h1>Küsimustik</h1>
+                <h2>Kontori- ja kaubanduspind</h2>
+            </header>
+            <fieldset>
+                <legend>Üldandmed</legend>
+                <div>
+                    <label for="objektAadress">Aadress</label>
+                    <input type="text" id="objektAadress" name="objektAadress">
+                </div>
+                <div>
+                    <label for="registriosa">Registriosa number</label>
+                    <input type="text" id="registriosa" name="registriosa">
+                </div>
+                <div>
+                    <label for="katastritunnus">Katastritunnus</label>
+                    <input type="text" id="katastritunnus" name="katastritunnus">
+                </div>
+                <div>
+                    <label for="sihtotstarve">Kinnistu sihtotstarve</label>
+                    <input type="text" id="sihtotstarve" name="sihtotstarve">
+                </div>
+                <div>
+                    <label for="tehingu-liik">Tehingu liik (müük, üür, rent)</label>
+                    <input type="text" id="tehingu-liik" name="tehingu-liik">
+                </div>
+                <div>
+                    <label for="uhistu">Korteriühistu</label>
+                    <input type="text" id="uhistu" name="uhistu">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Hoone – põhiinfo</legend>
+                <div>
+                    <label for="kasutusotstarve">Kasutusotstarve</label>
+                    <input type="text" id="kasutusotstarve" name="kasutusotstarve">
+                </div>
+                <div>
+                    <label for="kasutusluba">Kasutusluba</label>
+                    <input type="text" id="kasutusluba" name="kasutusluba">
+                </div>
+                <div>
+                    <label for="ehitusaasta">Ehitusaasta</label>
+                    <input type="text" id="ehitusaasta" name="ehitusaasta">
+                </div>
+                <div>
+                    <label for="hoone-seisukord">Hoone seisukord</label>
+                    <input type="text" id="hoone-seisukord" name="hoone-seisukord">
+                </div>
+                <div>
+                    <label for="hoone-renoveerimine">Tehtud ja planeeritud renoveerimised (sh. aasta)</label>
+                    <input type="text" id="hoone-renoveerimine" name="hoone-renoveerimine">
+                </div>
+                <div>
+                    <label for="energiamargis">Energiamärgis, väljastamise aeg</label>
+                    <input type="text" id="energiamargis" name="energiamargis">
+                </div>
+                <div>
+                    <label for="korrused">Maapealsete/maaaluste korruste arv</label>
+                    <input type="text" id="korrused" name="korrused">
+                </div>
+                <div>
+                    <label for="reklaam">Reklaamvõimalused</label>
+                    <input type="text" id="reklaam" name="reklaam">
+                </div>
+                <div>
+                    <label for="postkast">Postkasti võimalused</label>
+                    <input type="text" id="postkast" name="postkast">
+                </div>
+                <div>
+                    <label for="retseptsioon">Retseptsioon</label>
+                    <input type="text" id="retseptsioon" name="retseptsioon">
+                </div>
+                <div>
+                    <label for="hoone-plussid">Lisaväärtused/plussid</label>
+                    <input type="text" id="hoone-plussid" name="hoone-plussid">
+                </div>
+                <div>
+                    <label for="hoone-puudused">Puudused</label>
+                    <input type="text" id="hoone-puudused" name="hoone-puudused">
+                </div>
+                <div>
+                    <label for="hoone-markused">Lisamärkused</label>
+                    <input type="text" id="hoone-markused" name="hoone-markused">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Hoone – ehitusmaterjalid</legend>
+                <div>
+                    <label for="konstruktsioon">Kandekonstruktsioon</label>
+                    <input type="text" id="konstruktsioon" name="konstruktsioon">
+                </div>
+                <div>
+                    <label for="vahelaed">Vahelaed</label>
+                    <input type="text" id="vahelaed" name="vahelaed">
+                </div>
+                <div>
+                    <label for="fassaad">Välisviimistlus</label>
+                    <input type="text" id="fassaad" name="fassaad">
+                </div>
+                <div>
+                    <label for="katus">Katus</label>
+                    <input type="text" id="katus" name="katus">
+                </div>
+            </fieldset>           
+            <fieldset>
+                <legend>Ümbruskond</legend>
+                <div>
+                    <label for="asukoht">Asukoha kirjeldus</label>
+                    <input type="text" id="asukoht" name="asukoht">
+                </div>
+                <div>
+                    <label for="parkimine">Töötajate parkimine (tasuta, tasuline, mitu kohta)</label>
+                    <input type="text" id="parkimine" name="parkimine">
+                </div>
+                <div>
+                    <label for="kliendiParkimine">Klientide parkimiskorraldus</label>
+                    <input type="text" id="kliendiParkimine" name="kliendiParkimine">
+                </div>
+                <div>
+                    <label for="naabrus">Naabruses asuvad ettevõtted</label>
+                    <input type="text" id="naabrus" name="naabrus">
+                </div>
+                <div>
+                    <label for="uhistransport">Ühistransport kirjeldus</label>
+                    <input type="text" id="uhistransport" name="uhistransport">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Äripind</legend>
+                <div>
+                    <label for="pinna-tyyp">Pinna tüüp</label>
+                    <input type="text" id="pinna-tyyp" name="pinna-tyyp">
+                </div>
+                <div>
+                    <label for="omandiVorm">Omandivorm</label>
+                    <input type="text" id="omandiVorm" name="omandiVorm">
+                </div>
+                <div>
+                    <label for="pindala">Pindala</label>
+                    <input type="text" id="pindala" name="pindala">
+                </div>
+                <div>
+                    <label for="korrus">Korrus</label>
+                    <input type="text" id="korrus" name="korrus">
+                </div>
+                <div>
+                    <label for="planeering">Planeering ja tubade arv</label>
+                    <input type="text" id="planeering" name="planeering">
+                </div>
+                <div>
+                    <label for="lae-korgus">Lae kõrgus</label>
+                    <input type="text" id="lae-korgus" name="lae-korgus">
+                </div>
+                <div>
+                    <label for="pinna-seisukord">Pinna seisukord</label>
+                    <input type="text" id="pinna-seisukord" name="pinna-seisukord">
+                </div>
+                <div>
+                    <label for="pinna-renoveerimine">Tehtud renoveerimised (sh. aasta)</label>
+                    <input type="text" id="pinna-renoveerimine" name="pinna renoveerimine">
+                </div>
+                <div>
+                    <label for="sissepaas">Eraldi sissepääs</label>
+                    <input type="text" id="sissepaas" name="sissepaas">
+                </div>
+                <div>
+                    <label for="tookohad">Mitu töökohta saab luua</label>
+                    <input type="text" id="tookohad" name="tookohad">
+                </div>
+                <div>
+                    <label for="noup">Nõupidamisteruum</label>
+                    <input type="text" id="noup" name="noupidamisteruum">
+                </div>
+                <div>
+                    <label for="kooginurk">Köögi olemasolu</label>
+                    <input type="text" id="kooginurk" name="kooginurk">
+                </div>
+                <div>
+                    <label for="tualettruum">Tualettruum</label>
+                    <input type="text" id="tualettruum" name="tualettruum">
+                </div>
+                <div>
+                    <label for="pesemisvoimalusued">Pesemisvõimalused</label>
+                    <input type="text" id="pesemisvoimalusued" name="pesemisvoimalusued">
+                </div>
+                <div>
+                    <label for="laadimine">Kauba laadimisvõimalus</label>
+                    <input type="text" id="laadimine" name="laadimine">
+                </div>
+                <div>
+                    <label for="aknad">Akende olemasolu ja asetus</label>
+                    <input type="text" id="aknad" name="aknad">
+                </div>
+                <div>
+                    <label for="sisustus">Sisustus</label>
+                    <input type="text" id="sisustus" name="sisustus">
+                </div>
+                <div>
+                    <label for="turvalisus">Turvalisus</label>
+                    <input type="text" id="turvalisus" name="turvalisus">
+                </div>
+                <div>
+                    <label for="kindlustus">Kindlustus</label>
+                    <input type="text" id="kindlustus" name="kindlustus">
+                </div>
+                <div>
+                    <label for="pinna-plussid">Lisaväärtused/plussid</label>
+                    <input type="text" id="pinna-plussid" name="pinna plussid">
+                </div>
+                <div>
+                    <label for="pinna-puudused">Puudused</label>
+                    <input type="text" id="pinna-puudused" name="pinna puudused">
+                </div>
+                <div>
+                    <label for="pinna-markused">Lisamärkused</label>
+                    <input type="text" id="pinna-markused" name="pinna markused">
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Äripinna – Tehnilised näitajad</legend>
+                <div>
+                    <label for="kutesusteem">Küttesüsteem</label>
+                    <input type="text" id="kutesusteem" name="kutesusteem">
+                </div>
+                <div>
+                    <label for="vesi">Vesi</label>
+                    <input type="text" id="vesi" name="vesi">
+                </div>
+                <div>
+                    <label for="kanalisatsioon">Kanalisatsioon</label>
+                    <input type="text" id="kanalisatsioon" name="kanalisatsioon">
+                </div>
+                <div>
+                    <label for="ventilatsioon">Ventilatsioon</label>
+                    <input type="text" id="ventilatsioon" name="ventilatsioon">
+                </div>
+                <div>
+                    <label for="jahutus">Jahutus</label>
+                    <input type="text" id="jahutus" name="jahutus">
+                </div>
+                <div>
+                    <label for="side">Sidesüsteem</label>
+                    <input type="text" id="side" name="side">
+                </div>
+                <div>
+                    <label for="elekter">Elekter, sh tööstuvool</label>
+                    <input type="text" id="elekter" name="elekter">
+                </div>
+                <div>
+                    <label for="gaas">Gaas</label>
+                    <input type="text" id="gaas" name="gaas">
+                </div>
+            </fieldset> 
+            <fieldset>
+                <legend>Kulud</legend>
+                <div>
+                    <label for="kulud">Kõrvalkulude kirjeldus ja suurus (eur/m2)</label>
+                    <input type="text" id="kulud" name="kulud">
+                </div>
+                <div>
+                    <label for="remondifond">Remondifond</label>
+                    <input type="text" id="remondifond" name="remondifond">
+                </div>
+                <div>
+                    <label for="uhistu- laenud">Ühistu laenud</label>
+                    <input type="text" id="uhistu-laenud" name="uhistu-laenud">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Täida kui on üür</legend>
+                <div>
+                    <label for="yyrhind">Soovitud üürihind (€/m²)</label>
+                    <input type="text" id="yyrhind" name="yyrhind">
+                </div>
+                <div>
+                    <label for="miinimum-periood">Minimaalne üüriperiood</label>
+                    <input type="text" id="miinimum-periood" name="miinimum-periood">
+                </div>
+                <div>
+                    <label for="tahtajatuLep">Tähtajatu lepingu lõpetamise kord</label>
+                    <input type="text" id="tahtajatuLep" name="tahtajatu-lepingu-lopetamise-kord">
+                </div>
+                <div>
+                    <label for="uuriga-moobel">Kas üür sisaldab mööblit</label>
+                    <input type="text" id="uuriga-moobel" name="uuriga-kaasnev-moobel">
+                </div>
+                <div>
+                    <label for="tagatisraha">Tagatisraha suurus</label>
+                    <input type="text" id="tagatisraha" name="tagatisraha">
+                </div>
+                <div>
+                    <label for="indekseerimine">Üüri indekseerimise kord</label>
+                    <input type="text" id="indekseerimine" name="uuri-indekseerimine">
+                </div>
+                <div>
+                    <label for="km-yyr">Kas hind sisaldab käibemaksu</label>
+                    <input type="text" id="km-yyr" name="km-yyr">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Täida kui on müük</legend>
+                <div>
+                    <label for="muugihind">Müügihind</label>
+                    <input type="text" id="muugihind" name="muugihind">
+                </div>
+                <div>
+                    <label for="km-myyk">Kas hind sisaldab käibemaksu</label>
+                    <input type="text" id="km-myyk" name="km-myyk">
+                </div>
+                <div>
+                    <label for="vara-liik">Kas vara on kaas- või ühisomandis</label>
+                    <input type="text" id="vara-liik" name="kas-vara-on-kaas-voi-uhisomand">
+                </div>
+                <div>
+                    <label for="hind-sisaldab">Mida hind  sisaldab (parkimine, panipaik jm, sh hulk)</label>
+                    <input type="text" id="hind-sisaldab" name="hind-sisaldab">
+                </div>
+                <div>
+                    <label for="juurdepaas">Juurdepääs (avalikult teelt / eratee / servituut)</label>
+                    <input type="text" id="juurdepaas" name="juurdepaas">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Koormatised (täida müügi puhul)</legend>
+                <div>
+                    <label for="hupoteek">Hüpoteek</label>
+                    <input type="text" id="hupoteek" name="hupoteek">
+                </div>
+                <div>
+                    <label for="servituudid">Servituudid</label>
+                    <input type="text" id="servituudid" name="servituudid">
+                </div>
+                <div>
+                    <label for="kasutuskord">Kasutuskord</label>
+                    <input type="text" id="kasutuskord" name="kasutuskord">
+                </div>
+                <div>
+                    <label for="uurilepingud">Üürilepingud</label>
+                    <input type="text" id="uurilepingud" name="uurilepingud">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Omaniku / üürileandja andmed</legend>
+                <div>
+                    <label for="omanik-nimi">Nimi</label>
+                    <input type="text" id="omanik-nimi" name="omanik-nimi">
+                </div>
+                <div>
+                    <label for="isikukood">Isikukood / registrikood</label>
+                    <input type="text" id="isikukood" name="isikukood">
+                </div>
+                <div>
+                    <label for="telefon">Telefon</label>
+                    <input type="text" id="telefon" name="telefon">
+                </div>
+                <div>
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="aadress">Elukoht / juriidiline aadress</label>
+                    <input type="text" id="aadress" name="aadress">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Maakleritasu kokkulepe</legend>
+                <div>
+                    <label for="ainuesindus">Kas objekt tuleb ainuesindusse?</label>
+                    <input type="text" id="ainuesindus" name="ainuesindus">
+                </div>
+                <div>
+                    <label for="makleritasu">Maaklertasu suurus</label>
+                    <input type="text" id="makleritasu" name="makleritasu">
+                </div>
+                <div>
+                    <label for="tasumise-tingimus">Tasumise tingimused</label>
+                    <input type="text" id="tasumise-tingimus" name="tasumise-tingimus">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Märkused</legend>
+                <div class="fullline">
+                    <label for="markused">Lisainfo, mida peaks teadma</label>
+                    <textarea id="markused" name="markused" rows="4" maxlength="400"></textarea>
+                </div>
+            </fieldset>
+            
+            <button type="button" onclick="generatePDF()">Esita</button>
+        </form>
+    </div>
+    <footer>
+        <small>&copy; 2026 Marko Madismäe</small>
+      </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+        
+    
+</body>
+</html>
